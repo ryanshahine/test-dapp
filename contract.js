@@ -1,4 +1,4 @@
-/*global ethereum, MetamaskOnboarding */
+/*global ethereum, web3, MetamaskOnboarding */
 
 /*
 The `piggybankContract` is compiled from:
@@ -29,6 +29,8 @@ The `piggybankContract` is compiled from:
       }
   }
 */
+
+const web3 = new Web3(window.ethereum)
 
 const forwarderOrigin = 'http://localhost:9010'
 
